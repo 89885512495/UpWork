@@ -38,7 +38,7 @@ def get_data():
 
 		yield (
 			{
-				'date': tag.find('td', class_='table-col datalist').get_text(),
+				'date': tag.select('td')[0].get_text(strip=True),
 				'time': time.strftime("%H:%M"),
 				'eur_buy': tag.select('td')[3].get_text(strip=True)[:3],
 				'eur_sell': tag.select('td')[3].get_text(strip=True)[5:],
