@@ -1,3 +1,10 @@
+"""
+- Create a script called amazon.py
+
+- The script should include a function called scrape().
+
+- The function should accept a single parameter: the link to an amazon product.
+"""
 import requests
 from bs4 import BeautifulSoup
 from pprint import pprint
